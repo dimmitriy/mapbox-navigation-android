@@ -101,7 +101,6 @@ dependencies {
     implementation dependenciesList.mapboxSdkTurf
 
     androidTestImplementation project(':libtesting-ui')
-    androidTestUtil dependenciesList.testOrchestrator
 
     //ktlint
     ktlint dependenciesList.ktlint

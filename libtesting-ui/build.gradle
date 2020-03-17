@@ -10,6 +10,7 @@ android {
         targetSdkVersion androidVersions.targetSdkVersion
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunnerArguments clearPackageData: 'true'
         consumerProguardFiles 'consumer-rules.pro'
     }
 
@@ -28,4 +29,5 @@ dependencies {
         exclude group: 'org.jetbrains.kotlin'
         exclude group: 'androidx.annotation'
     }
+    androidTestUtil dependenciesList.testOrchestrator
 }
