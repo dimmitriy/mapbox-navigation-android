@@ -20,6 +20,10 @@ android {
     consumerProguardFiles 'proguard-consumer.pro'
   }
 
+  testOptions {
+    execution 'ANDROIDX_TEST_ORCHESTRATOR'
+  }
+
   configurations {
     javadocDeps
   }
