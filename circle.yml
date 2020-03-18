@@ -261,7 +261,6 @@ commands:
           shell: /bin/bash -euo pipefail
           command: |
             gcloud firebase test android run --type instrumentation \
-              --environment-variables clearPackageData=true \
               --app << parameters.module_target >>/build/outputs/apk/<< parameters.variant >>/<< parameters.module_target >>-<< parameters.variant >>.apk \
               --test << parameters.module_target >>/build/outputs/apk/androidTest/<< parameters.variant >>/<< parameters.module_target >>-<< parameters.variant >>-androidTest.apk \
               --device model=hammerhead,version=21,locale=en,orientation=portrait  \
